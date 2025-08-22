@@ -1,67 +1,123 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>CAP Garland, LLC</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>AK Investments I LLC — Send Money</title>
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      background-color: #f0f0f0;
-      color: #333;
+    :root{
+      --green:#179b4a;   /* primary */
+      --yellow:#f7c72a;  /* accent  */
+      --dark:#0f1720;    /* bg      */
+      --card:#121c25;    /* card    */
     }
-    header {
-      background-color: #003366;
-      color: white;
-      padding: 30px 20px;
-      text-align: center;
-    }
-    section {
-      max-width: 800px;
-      margin: 40px auto;
-      padding: 0 20px;
-    }
-    h1, h2 {
-      color: #003366;
-    }
-    .contact {
-      background: #fff;
-      padding: 20px;
-      border-left: 5px solid #003366;
-      margin-top: 30px;
-    }
-    footer {
-      background-color: #003366;
-      color: white;
-      text-align: center;
-      padding: 15px;
-      margin-top: 50px;
-    }
+    *{box-sizing:border-box}
+    body{margin:0;font-family:Arial,Helvetica,sans-serif;background:var(--dark);color:#fff}
+    a{color:var(--yellow);text-decoration:none}
+    header{background:var(--green);padding:26px 16px;text-align:center;border-bottom:4px solid var(--yellow)}
+    header h1{margin:0;font-size:2.3rem}
+    header p{margin:6px 0 0;opacity:.95}
+    nav{background:#0b1218;text-align:center;padding:12px}
+    nav a{color:#fff;margin:0 14px;font-weight:700}
+    nav a:hover{color:var(--yellow)}
+    .hero{position:relative;display:flex;justify-content:center;align-items:center;padding:38px;background:#10202a}
+    .hero::after{content:\"\";position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.25),rgba(0,0,0,.55));pointer-events:none}
+    .hero img{max-width:1000px;width:92%;border-radius:14px;border:4px solid var(--yellow);display:block}
+    .section{max-width:1100px;margin:22px auto;background:var(--card);padding:22px;border-radius:14px;border:1px solid rgba(255,255,255,.08)}
+    .section h2{margin:0 0 10px;color:var(--yellow)}
+    .two-col{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+    ul{margin:0;line-height:1.9;padding-left:18px}
+    .cta{margin-top:14px;display:flex;gap:12px;flex-wrap:wrap}
+    .btn{background:var(--yellow);color:#111;font-weight:800;padding:12px 16px;border-radius:10px;border:none;display:inline-block}
+    .btn.secondary{background:transparent;color:#fff;border:2px solid var(--yellow)}
+    .gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:14px;margin-top:14px}
+    .gallery img{width:100%;border-radius:10px;border:2px solid var(--yellow)}
+    footer{background:var(--green);border-top:4px solid var(--yellow);text-align:center;padding:18px;margin-top:26px}
   </style>
 </head>
 <body>
+
   <header>
-    <h1>CAP Garland, LLC</h1>
-    <p>Private Investment Fund</p>
+    <h1>AK Investments I LLC</h1>
+    <p>Fast & Secure Money Transfers • Sherman Oaks, CA</p>
   </header>
 
-  <section>
-    <h2>About Us</h2>
-    <p>CAP Garland, LLC is a Washington-based private investment fund focused on delivering value through diversified investment strategies.</p>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#contact">Contact</a>
+  </nav>
 
+  <!-- HERO -->
+  <div class="hero">
+    <img src="https://static.vecteezy.com/system/resources/previews/048/381/149/non_2x/cartoon-money-payment-mobile-bank-electronic-transaction-transfer-money-via-online-mobile-app-illustration-people-send-and-receive-money-online-vector.jpg" alt="Send money illustration">
+  </div>
+
+  <!-- ABOUT -->
+  <section id="about" class="section">
+    <h2>About Us</h2>
+    <div class="two-col">
+      <p>
+        <strong>AK Investments I LLC</strong> specializes in <em>Send Money</em> solutions—simple,
+        quick, and reliable transfers with transparent information and friendly support.
+      </p>
+      <p>
+        Based on Matilija Street, Sherman Oaks (CA 91403), we help individuals and
+        small businesses move funds with confidence.
+      </p>
+    </div>
+    <div class="cta">
+      <a class="btn" href="tel:18143999752">Call Now: +1 814-399-9752</a>
+      <a class="btn secondary" href="mailto:contact@akinvest.shop">Email: contact@akinvest.shop</a>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section id="services" class="section">
+    <h2>What We Offer</h2>
+    <ul>
+      <li>Domestic money transfers (fast turnaround)</li>
+      <li>Simple, guided send-money experience</li>
+      <li>Status updates & friendly assistance</li>
+      <li>Basic business payouts support</li>
+      <li>Clear information and responsive contact</li>
+    </ul>
+  </section>
+
+  <!-- GALLERY -->
+  <section id="gallery" class="section">
+    <h2>Gallery</h2>
+    <div class="gallery">
+      <img src="https://myfin.by/source/1/ub7IYC_YDu6lHMfdBVrE8YAVB0i7c7oC.jpeg" alt="Money transfer concept 1">
+      <img src="https://miro.medium.com/v2/resize:fit:1200/1*n_PxC4JwcWI5RX1idWLq6A.jpeg" alt="Money transfer concept 2">
+      <img src="https://static.vecteezy.com/system/resources/previews/048/381/149/non_2x/cartoon-money-payment-mobile-bank-electronic-transaction-transfer-money-via-online-mobile-app-illustration-people-send-and-receive-money-online-vector.jpg" alt="Send money illustration">
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section">
     <h2>Contact</h2>
-    <div class="contact">
-      <p><strong>Address:</strong> 915 W 2nd Ave, Spokane, WA 99201</p>
-      <p><strong>Email:</strong> <a href="mailto:ryanberg@capgarland.shop">ryanberg@capgarland.shop</a></p>
-      <p><strong>Phone:</strong> (509) 822-3850</p>
+    <div class="two-col">
+      <div>
+        <p>📍 <strong>Address:</strong> Matilija Street, Sherman Oaks, CA 91403</p>
+        <p>☎ <strong>Phone:</strong> <a href="tel:18143999752">+1 814-399-9752</a></p>
+        <p>✉ <strong>Email:</strong> <a href="mailto:contact@akinvest.shop">contact@akinvest.shop</a></p>
+      </div>
+      <div>
+        <p><em>Hours</em></p>
+        <ul>
+          <li>Mon–Fri: 9:00–18:00</li>
+          <li>Sat: 10:00–15:00</li>
+          <li>Sun: Closed</li>
+        </ul>
+      </div>
     </div>
   </section>
 
   <footer>
-    &copy; 2025 CAP Garland, LLC. All rights reserved.
+    <p>&copy; 2025 AK Investments I LLC — Send Money</p>
   </footer>
+
 </body>
 </html>
